@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1000" height="150" rx="14" fill="#0d1117"/>
+  <g transform="translate(40 34)">
+    <rect x="0"   y="0" width="90" height="46" rx="6" fill="#e53935"/>
+    <rect x="92"  y="0" width="90" height="46" rx="0" fill="#fb8c00"/>
+    <rect x="184" y="0" width="90" height="46" fill="#fdd835"/>
+    <rect x="276" y="0" width="90" height="46" fill="#9ccc65"/>
+    <rect x="368" y="0" width="90" height="46" fill="#43a047"/>
+    <rect x="460" y="0" width="90" height="46" fill="#26a69a"/>
+    <rect x="552" y="0" width="90" height="46" fill="#29b6f6"/>
+    <rect x="644" y="0" width="90" height="46" fill="#1e88e5"/>
+    <rect x="736" y="0" width="90" height="46" fill="#3949ab"/>
+    <rect x="828" y="0" width="92" height="46" rx="6" fill="#8e24aa"/>
+    <!-- square inner corners of first/last block -->
+    <rect x="80" y="0" width="12" height="46" fill="#e53935"/>
+    <rect x="828" y="0" width="12" height="46" fill="#8e24aa"/>
+
+    <g fill="#8b949e" font-size="15" text-anchor="middle">
+      <text x="0"   y="74" text-anchor="start">0</text>
+      <text x="91"  y="74">25</text>
+      <text x="183" y="74">50</text>
+      <text x="275" y="74">75</text>
+      <text x="367" y="74">100</text>
+      <text x="459" y="74">125</text>
+      <text x="551" y="74">150</text>
+      <text x="643" y="74">175</text>
+      <text x="735" y="74">200</text>
+      <text x="827" y="74">225</text>
+      <text x="920" y="74" text-anchor="end">250 cm</text>
+    </g>
+    <text x="0" y="104" fill="#e6edf3" font-size="15" font-weight="600">◀ peligro</text>
+    <text x="920" y="104" fill="#e6edf3" font-size="15" font-weight="600" text-anchor="end">vía libre ▶</text>
+    <text x="460" y="104" fill="#6e7681" font-size="14" text-anchor="middle">más de 250 cm → LED apagado</text>
+  </g>
+</svg>

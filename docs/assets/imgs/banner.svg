@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b2e"/>
+    </linearGradient>
+    <linearGradient id="scale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e53935"/>
+      <stop offset="0.12" stop-color="#fb8c00"/>
+      <stop offset="0.24" stop-color="#fdd835"/>
+      <stop offset="0.36" stop-color="#9ccc65"/>
+      <stop offset="0.48" stop-color="#43a047"/>
+      <stop offset="0.60" stop-color="#26a69a"/>
+      <stop offset="0.70" stop-color="#29b6f6"/>
+      <stop offset="0.80" stop-color="#1e88e5"/>
+      <stop offset="0.90" stop-color="#3949ab"/>
+      <stop offset="1" stop-color="#8e24aa"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e53935" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#e53935" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="340" rx="18" fill="url(#bg)"/>
+
+  <!-- grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04">
+    <path d="M0 68H1200M0 136H1200M0 204H1200M0 272H1200"/>
+    <path d="M150 0V340M300 0V340M450 0V340M600 0V340M750 0V340M900 0V340M1050 0V340"/>
+  </g>
+
+  <!-- title -->
+  <text x="64" y="128" fill="#f0f6fc" font-size="76" font-weight="800" letter-spacing="-1">Urbanite</text>
+  <text x="66" y="172" fill="#9da7b3" font-size="24">Asistente de aparcamiento por ultrasonidos</text>
+  <text x="66" y="206" fill="#9da7b3" font-size="24">sobre STM32 · C bare-metal · máquinas de estados</text>
+
+  <!-- color scale -->
+  <rect x="66" y="246" width="470" height="14" rx="7" fill="url(#scale)"/>
+  <text x="66" y="290" fill="#6e7681" font-size="16">0 cm</text>
+  <text x="536" y="290" fill="#6e7681" font-size="16" text-anchor="end">250 cm</text>
+
+  <!-- board / sensor -->
+  <g transform="translate(700 92)">
+    <rect x="0" y="0" width="150" height="150" rx="10" fill="#1f6feb" fill-opacity="0.18" stroke="#388bfd" stroke-width="2"/>
+    <rect x="45" y="45" width="60" height="60" rx="4" fill="#0d1117" stroke="#58a6ff" stroke-width="1.5"/>
+    <text x="75" y="80" fill="#58a6ff" font-size="12" text-anchor="middle" font-weight="700">STM32</text>
+    <g fill="#58a6ff" fill-opacity="0.6">
+      <rect x="52" y="36" width="4" height="9"/><rect x="62" y="36" width="4" height="9"/><rect x="72" y="36" width="4" height="9"/><rect x="82" y="36" width="4" height="9"/><rect x="92" y="36" width="4" height="9"/>
+      <rect x="52" y="105" width="4" height="9"/><rect x="62" y="105" width="4" height="9"/><rect x="72" y="105" width="4" height="9"/><rect x="82" y="105" width="4" height="9"/><rect x="92" y="105" width="4" height="9"/>
+    </g>
+    <!-- RGB LED -->
+    <circle cx="28" cy="28" r="26" fill="url(#glow)"/>
+    <circle cx="28" cy="28" r="9" fill="#ff6b6b"/>
+    <!-- HC-SR04 -->
+    <rect x="160" y="45" width="40" height="60" rx="6" fill="#161b22" stroke="#8b949e" stroke-width="1.5"/>
+    <circle cx="180" cy="62" r="10" fill="#21262d" stroke="#c9d1d9" stroke-width="1.5"/>
+    <circle cx="180" cy="88" r="10" fill="#21262d" stroke="#c9d1d9" stroke-width="1.5"/>
+  </g>
+
+  <!-- sound waves -->
+  <g fill="none" stroke="#c9d1d9" stroke-linecap="round">
+    <path d="M915 145 Q935 167 915 189" stroke-opacity="0.9" stroke-width="3"/>
+    <path d="M940 128 Q972 167 940 206" stroke-opacity="0.65" stroke-width="3"/>
+    <path d="M965 111 Q1009 167 965 223" stroke-opacity="0.4" stroke-width="3"/>
+  </g>
+
+  <!-- obstacle -->
+  <rect x="1060" y="92" width="26" height="150" rx="4" fill="#30363d" stroke="#484f58" stroke-width="1.5"/>
+  <path d="M1066 110l14 14M1066 140l14 14M1066 170l14 14M1066 200l14 14" stroke="#484f58" stroke-width="2"/>
+
+  <!-- distance arrow -->
+  <g stroke="#6e7681" stroke-width="1.5">
+    <path d="M900 270H1056"/>
+    <path d="M900 264v12M1056 264v12"/>
+  </g>
+  <text x="978" y="296" fill="#6e7681" font-size="15" text-anchor="middle">d = t_eco · v_sonido / 2</text>
+</svg>
